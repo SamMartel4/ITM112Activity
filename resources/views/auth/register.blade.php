@@ -89,7 +89,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 25px;
-            background: #ecbbd9;
+            background: #ee95cc;
             color: white;
             border: none;
             border-radius: 6px;
@@ -112,6 +112,17 @@
         a {
             color: #eac2db;
             text-decoration: none;
+        }
+
+        .login-link {
+            color: #6a0ea2;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .login-link:hover {
+            color: #6a0ea2;
         }
     </style>
 </head>
@@ -214,7 +225,9 @@
 
     <p>
         Already have an account?
-        <a href="{{ route('login') }}">Login here</a>
+        <a href="{{ route('login') }}" class="login-link">
+        Login here
+        </a>
     </p>
 
 </div>
