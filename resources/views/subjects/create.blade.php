@@ -206,10 +206,7 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <small>
-                    Pindota ang Ctrl (Windows) samtang nag-click
-                    aron makapili og daghang teachers.
-                </small>
+               
             </div>
 
             <!-- Buttons -->
