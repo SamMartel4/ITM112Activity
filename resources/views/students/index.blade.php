@@ -22,7 +22,7 @@
         .add {
             display: inline-block;
             padding: 10px 15px;
-            background: #e76ab7;
+            background: #308c24;
             color: white;
             text-decoration: none;
             border-radius: 5px;

@@ -14,12 +14,12 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f4f7fb;
-            color: #243047;
+            color: #308c24;
         }
 
         .sidebar {
             width: 235px;
-            background: #172554;
+            background: #308c24;
             color: white;
             position: fixed;
             top: 0;
@@ -43,7 +43,7 @@
 
         .sidebar a:hover,
         .sidebar a.active {
-            background: #2563eb;
+            background: #1b4d46;
             color: white;
         }
 
@@ -143,12 +143,12 @@
         }
 
         .btn-primary {
-            background: #2563eb;
+            background: #308c24;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #1d4ed8;
+            background: #308c24;
         }
 
         .btn-secondary {

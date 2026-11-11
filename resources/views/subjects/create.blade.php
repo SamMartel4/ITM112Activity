@@ -16,7 +16,7 @@
             padding: 30px 15px;
             font-family: Arial, sans-serif;
             background: #f4f6f9;
-            color: #e76ab7;
+            color: #308c24;
         }
 
         .container {
@@ -31,7 +31,7 @@
         h1 {
             margin-top: 0;
             margin-bottom: 25px;
-            color: #e76ab7;
+            color: #308c24;
         }
 
         .form-group {
@@ -95,12 +95,12 @@
         }
 
         button {
-            background: #ea94c9;
+            background: #308c24;
             color: white;
         }
 
         button:hover {
-            background: #e76ab7;
+            background: #308c24;
         }
 
         .back-btn {
@@ -206,10 +206,7 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <small>
-                    Pindota ang Ctrl (Windows) samtang nag-click
-                    aron makapili og daghang teachers.
-                </small>
+                
             </div>
 
             <!-- Buttons -->

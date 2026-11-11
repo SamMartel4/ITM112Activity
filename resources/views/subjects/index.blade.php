@@ -19,7 +19,7 @@
         }
 
         h1 {
-            color: #e76ab7;
+            color: #181918;
         }
 
         .success {
@@ -40,7 +40,7 @@
 
         .add-btn {
             display: inline-block;
-            background-color: #f0a3d3;
+            background-color: #308c24;
             color: white;
             padding: 10px 15px;
             text-decoration: none;
@@ -49,7 +49,7 @@
         }
 
         .add-btn:hover {
-            background-color: #e76ab7;
+            background-color: #308c24;
         }
 
         table {
@@ -65,7 +65,7 @@
         }
 
         th {
-            background-color: #e76ab7;
+            background-color: #308c24;
             color: white;
         }
 
@@ -81,7 +81,7 @@
         .back-btn {
             display: inline-block;
             margin-top: 20px;
-            color: #e76ab7;
+            color: #308c24;
             text-decoration: none;
         }
 

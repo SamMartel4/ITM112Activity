@@ -13,7 +13,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f8dcef;
+            background: #c7e4c5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -89,7 +89,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 25px;
-            background: #ee95cc;
+            background: #308c24;
             color: white;
             border: none;
             border-radius: 6px;
@@ -97,7 +97,7 @@
         }
 
         button:hover {
-            background: #e76ab7;
+            background: #43b034;
         }
 
         .alert {
@@ -115,14 +115,14 @@
         }
 
         .login-link {
-            color: #6a0ea2;
+            color: #33d471;
             text-decoration: underline;
             font-weight: 500;
             transition: 0.3s;
         }
 
         .login-link:hover {
-            color: #6a0ea2;
+            color: #33d471;
         }
     </style>
 </head>

@@ -13,7 +13,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f8dcef;
+            background: #c7e4c5;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -89,7 +89,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 25px;
-            background: #e76ab7;
+            background: #308c24;
             color: white;
             border: none;
             border-radius: 6px;
@@ -97,7 +97,7 @@
         }
 
         button:hover {
-            background: #fb9cdb;
+            background: #43b034;
         }
 
         button:disabled {
@@ -119,7 +119,7 @@
         .timer {
             font-size: 35px;
             font-weight: bold;
-            color: #dc2626;
+            color: #b72d3d;
             margin: 15px 0;
         }
     </style>

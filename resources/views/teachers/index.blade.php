@@ -16,7 +16,7 @@
             padding: 30px;
             font-family: Arial, sans-serif;
             background: #f4f7fb;
-            color: #e76ab7;
+            color: #308c24;
         }
 
         .container {
@@ -35,7 +35,7 @@
 
         .subtitle {
             margin-bottom: 25px;
-            color: #ef9ed0;
+            color: #308c24;
         }
 
         .success {
@@ -50,14 +50,14 @@
             display: inline-block;
             margin-bottom: 20px;
             padding: 11px 16px;
-            background: #e76ab7;
+            background: #308c24;
             color: white;
             text-decoration: none;
             border-radius: 7px;
         }
 
         .add-button:hover {
-            background: #e76ab7;
+            background: #308c24;
         }
 
         .table-wrapper {
