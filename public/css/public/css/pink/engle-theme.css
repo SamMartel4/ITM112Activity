@@ -1,0 +1,161 @@
+/* GENERAL DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff5fa;
+    color: #4a2638;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #831843;
+}
+
+/* CONTAINERS */
+.container,
+.dashboard-container,
+.login-container,
+.register-container {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* NAVIGATION */
+nav, .sidebar {
+    background: #fce7f3;
+    color: #831843;
+}
+
+nav a, .sidebar a {
+    color: #831843;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover, .sidebar a:hover {
+    background: #f9a8d4;
+    border-radius: 6px;
+}
+
+/* BUTTONS */
+button, .btn, input[type="submit"] {
+    background: #ec4899;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover {
+    background: #be185d;
+}
+
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #f9a8d4;
+    border-radius: 7px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    outline: none;
+    background: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 0 3px #fce7f3;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #f9a8d4;
+    color: #831843;
+    padding: 13px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #fce7f3;
+}
+
+tr:hover td {
+    background: #fff5fa;
+}
+
+/* DASHBOARD CARDS */
+.card, .stat-card {
+    background: white;
+    border: 1px solid #fce7f3;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(190, 24, 93, 0.08);
+}
+
+.card h3, .stat-card h3 {
+    color: #be185d;
+}
+
+/* LINKS */
+a {
+    color: #db2777;
+}
+
+a:hover {
+    color: #831843;
+}
+
+/* ALERTS */
+.alert {
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background: #fce7f3;
+    color: #831843;
+}
+
+.alert-danger {
+    background: #ffe4e6;
+    color: #be123c;
+}
+
+/* RESPONSIVE TABLE */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container, .dashboard-container {
+        padding: 15px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    nav a, .sidebar a {
+        padding: 8px;
+    }
+}

@@ -13,7 +13,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #e9c8de;
+            background: #f8dcef;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -89,7 +89,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 25px;
-            background: #2563eb;
+            background: #ecbbd9;
             color: white;
             border: none;
             border-radius: 6px;
@@ -97,7 +97,7 @@
         }
 
         button:hover {
-            background: #1d4ed8;
+            background: #e76ab7;
         }
 
         .alert {
@@ -110,7 +110,7 @@
         }
 
         a {
-            color: #2563eb;
+            color: #eac2db;
             text-decoration: none;
         }
     </style>

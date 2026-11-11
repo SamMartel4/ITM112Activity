@@ -18,14 +18,12 @@ Route::get('/', function () {
 // Login and Registration
 Route::middleware('guest')->group(function () {
 
-    // Login
     Route::get('/login', [AuthController::class, 'showLogin'])
         ->name('login');
 
     Route::post('/login', [AuthController::class, 'login'])
         ->name('login.submit');
 
-    // Registration
     Route::get('/register', [RegistrationController::class, 'showRegister'])
         ->name('register');
 

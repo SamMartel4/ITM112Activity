@@ -16,7 +16,7 @@
             padding: 30px;
             font-family: Arial, sans-serif;
             background: #f4f7fb;
-            color: #243047;
+            color: #e76ab7;
         }
 
         .container {
@@ -30,12 +30,12 @@
 
         h1 {
             margin: 0 0 8px;
-            font-size: 28px;
+            font-size: 40px;
         }
 
         .subtitle {
             margin-bottom: 25px;
-            color: #64748b;
+            color: #ef9ed0;
         }
 
         .success {
@@ -50,14 +50,14 @@
             display: inline-block;
             margin-bottom: 20px;
             padding: 11px 16px;
-            background: #2563eb;
+            background: #e76ab7;
             color: white;
             text-decoration: none;
             border-radius: 7px;
         }
 
         .add-button:hover {
-            background: #1d4ed8;
+            background: #e76ab7;
         }
 
         .table-wrapper {

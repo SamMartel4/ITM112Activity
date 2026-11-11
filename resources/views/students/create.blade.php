@@ -20,7 +20,7 @@
             border-radius: 10px;
         }
 
-        h1 { color: #1e3a8a; }
+        h1 { color: #e76ab7; }
 
         label {
             display: block;
@@ -37,7 +37,7 @@
         button {
             margin-top: 20px;
             padding: 10px 15px;
-            background: #2563eb;
+            background: #eb8dc7;
             color: white;
             border: none;
             border-radius: 5px;
@@ -46,7 +46,7 @@
 
         .back {
             margin-left: 10px;
-            color: #2563eb;
+            color: #e76ab7;
         }
     </style>
 </head>

@@ -8,15 +8,21 @@ use Illuminate\Support\Facades\RateLimiter;
 
 class AuthController extends Controller
 {
+    // Show Login Page
     public function showLogin()
     {
         if (Auth::check()) {
             return redirect()->route('dashboard');
         }
 
-        return view('auth.login');
+        return response()
+            ->view('auth.login')
+            ->header('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0')
+            ->header('Pragma', 'no-cache')
+            ->header('Expires', '0');
     }
 
+    // Login User
     public function login(Request $request)
     {
         $request->validate([
@@ -24,12 +30,9 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        // Unique key for email and IP address
         $key = strtolower($request->email) . '|' . $request->ip();
 
-        // Check if login is locked
         if (RateLimiter::tooManyAttempts($key, 5)) {
-
             $seconds = RateLimiter::availableIn($key);
 
             return back()->withErrors([
@@ -38,7 +41,6 @@ class AuthController extends Controller
               ->onlyInput('email');
         }
 
-        // Check login credentials
         if (Auth::attempt($request->only('email', 'password'))) {
 
             RateLimiter::clear($key);
@@ -48,24 +50,21 @@ class AuthController extends Controller
             return redirect()->intended(route('dashboard'));
         }
 
-        // Record failed attempt for 5 minutes
         RateLimiter::hit($key, 300);
 
-        // Check if fifth failed attempt is reached
         if (RateLimiter::tooManyAttempts($key, 5)) {
-
             return back()->withErrors([
                 'email' => 'Too many login attempts.'
             ])->with('lockout_seconds', 300)
               ->onlyInput('email');
         }
 
-        // Invalid credentials
         return back()->withErrors([
             'email' => 'Invalid email or password.'
         ])->onlyInput('email');
     }
 
+    // Logout User
     public function logout(Request $request)
     {
         Auth::logout();

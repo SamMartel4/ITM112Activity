@@ -13,7 +13,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #eef2f7;
+            background: #f8dcef;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,7 +55,7 @@
         }
 
         input:focus {
-            border-color: #2563eb;
+            border-color: #efe9ed;
         }
 
         .password-wrapper {
@@ -89,7 +89,7 @@
             width: 100%;
             padding: 12px;
             margin-top: 25px;
-            background: #2563eb;
+            background: #e76ab7;
             color: white;
             border: none;
             border-radius: 6px;
@@ -97,7 +97,7 @@
         }
 
         button:hover {
-            background: #1d4ed8;
+            background: #fb9cdb;
         }
 
         button:disabled {
@@ -107,7 +107,7 @@
 
         .alert {
             background: #fee2e2;
-            border: 1px solid #fca5a5;
+            border: 1px solid #e6e2e4;
             color: #b91c1c;
             padding: 12px;
             border-radius: 6px;

@@ -16,7 +16,7 @@
             padding: 30px 15px;
             font-family: Arial, sans-serif;
             background: #f4f6f9;
-            color: #333;
+            color: #e76ab7;
         }
 
         .container {
@@ -31,7 +31,7 @@
         h1 {
             margin-top: 0;
             margin-bottom: 25px;
-            color: #243b53;
+            color: #e76ab7;
         }
 
         .form-group {
@@ -95,12 +95,12 @@
         }
 
         button {
-            background: #2563eb;
+            background: #ea94c9;
             color: white;
         }
 
         button:hover {
-            background: #1d4ed8;
+            background: #e76ab7;
         }
 
         .back-btn {

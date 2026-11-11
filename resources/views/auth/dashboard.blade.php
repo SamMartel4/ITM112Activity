@@ -17,7 +17,7 @@
         }
 
         .navbar {
-            background: #1e293b;
+            background: #e76ab7;
             color: white;
             padding: 20px 30px;
             display: flex;
@@ -53,7 +53,7 @@
             background: white;
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 10px #e76ab7(0,0,0,0.05);
         }
 
         .card h3 {
@@ -61,7 +61,7 @@
         }
 
         .card a {
-            color: #2563eb;
+            color: #e76ab7;
             text-decoration: none;
             font-weight: bold;
         }
