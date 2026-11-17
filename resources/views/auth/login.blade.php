@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login | School Management System</title>
 
     <style>
@@ -12,50 +13,81 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f8dcef;
+            min-height: 100vh;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f5f1ff;
+            color: #29213d;
         }
 
         .login-container {
-            background: white;
-            width: 90%;
+            width: 100%;
             max-width: 400px;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            padding: 38px 32px;
+            background: #ffffff;
+            border: 1px solid #ebe4fa;
+            border-radius: 16px;
+            box-shadow: 0 12px 35px rgba(75, 45, 120, 0.08);
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee7ff;
+            color: #7042b5;
+            border-radius: 14px;
+            font-size: 25px;
+            font-weight: bold;
         }
 
         h2 {
+            margin: 0;
             text-align: center;
-            color: #1e293b;
+            font-size: 23px;
+            color: #38245e;
         }
 
-        p {
+        .subtitle {
+            margin: 10px 0 28px;
             text-align: center;
-            color: #64748b;
+            color: #827792;
+            font-size: 14px;
+            line-height: 1.5;
         }
 
         label {
             display: block;
-            margin-top: 18px;
+            margin: 18px 0 8px;
+            font-size: 14px;
             font-weight: bold;
+            color: #45345f;
         }
 
         input {
             width: 100%;
-            padding: 12px;
-            margin-top: 8px;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
+            padding: 13px 14px;
+            border: 1px solid #ded6ec;
+            border-radius: 8px;
+            background: #ffffff;
+            font-size: 14px;
             outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
         }
 
         input:focus {
-            border-color: #efe9ed;
+            border-color: #8054c7;
+            box-shadow: 0 0 0 3px rgba(128, 84, 199, 0.12);
+        }
+
+        input::placeholder {
+            color: #aaa1b8;
         }
 
         .password-wrapper {
@@ -63,64 +95,112 @@
         }
 
         .password-wrapper input {
-            padding-right: 45px;
+            padding-right: 48px;
         }
 
         .toggle-password {
             position: absolute;
-            right: 12px;
+            right: 13px;
             top: 50%;
             transform: translateY(-50%);
-            cursor: pointer;
-            width: 22px;
-            height: 22px;
-            color: #64748b;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .toggle-password svg {
-            width: 22px;
-            height: 22px;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            margin-top: 25px;
-            background: #e76ab7;
-            color: white;
-            border: none;
-            border-radius: 6px;
+            width: 25px;
+            height: 25px;
+            color: #817492;
             cursor: pointer;
         }
 
-        button:hover {
-            background: #fb9cdb;
+        .toggle-password svg {
+            width: 21px;
+            height: 21px;
         }
 
-        button:disabled {
-            background: #94a3b8;
+        .toggle-password:focus {
+            outline: 2px solid #8054c7;
+            border-radius: 4px;
+        }
+
+        .login-button {
+            width: 100%;
+            margin-top: 26px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #7042b5;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .login-button:hover {
+            background: #593394;
+        }
+
+        button:disabled,
+        input:disabled {
+            opacity: 0.6;
             cursor: not-allowed;
         }
 
         .alert {
-            background: #fee2e2;
-            border: 1px solid #e6e2e4;
-            color: #b91c1c;
-            padding: 12px;
-            border-radius: 6px;
-            margin-bottom: 15px;
-            font-size: 14px;
-            text-align: center;
+            margin-bottom: 20px;
+            padding: 13px;
+            border: 1px solid #f2caca;
+            border-radius: 8px;
+            background: #fff0f0;
+            color: #a83232;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .alert p {
+            margin: 8px 0;
         }
 
         .timer {
-            font-size: 35px;
-            font-weight: bold;
-            color: #dc2626;
             margin: 15px 0;
+            color: #c03939;
+            font-size: 34px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .register-link {
+            margin-top: 23px;
+            text-align: center;
+            color: #827792;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: #7042b5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #aaa1b8;
+            font-size: 11px;
+        }
+
+        @media (max-width: 420px) {
+            .login-container {
+                padding: 30px 23px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
         }
     </style>
 </head>
@@ -129,8 +209,14 @@
 
 <div class="login-container">
 
-    <h2>School Management System</h2>
-    <p>Sign in to your account</p>
+    <div class="logo">S</div>
+
+    <h2>Welcome Back!</h2>
+
+    <p class="subtitle">
+        School Management System<br>
+        Sign in to continue to your account.
+    </p>
 
     {{-- Lockout warning and countdown --}}
     @if (session('lockout_seconds'))
@@ -151,12 +237,12 @@
 
     @else
 
-        {{-- Display errors --}}
+        {{-- Display validation and login errors --}}
         @if ($errors->any())
 
-            <div class="alert">
+            <div class="alert" role="alert">
                 @foreach ($errors->all() as $error)
-                    {{ $error }}
+                    <div>{{ $error }}</div>
                 @endforeach
             </div>
 
@@ -168,18 +254,20 @@
 
         @csrf
 
-        <label>Email Address</label>
+        <label for="email">Email Address</label>
 
         <input
             type="email"
+            id="email"
             name="email"
             placeholder="Enter your email"
             value="{{ old('email') }}"
+            autocomplete="username"
             required
             @if(session('lockout_seconds')) disabled @endif
         >
 
-        <label>Password</label>
+        <label for="password">Password</label>
 
         <div class="password-wrapper">
 
@@ -188,16 +276,20 @@
                 name="password"
                 id="password"
                 placeholder="Enter your password"
+                autocomplete="current-password"
                 required
                 @if(session('lockout_seconds')) disabled @endif
             >
 
-            {{-- Eye icon with slash --}}
             <span
                 class="toggle-password"
                 id="togglePassword"
+                role="button"
+                tabindex="0"
                 onclick="togglePasswordVisibility()"
+                onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); togglePasswordVisibility(); }"
                 title="Show password"
+                aria-label="Show password"
             >
                 <svg
                     id="eyeIcon"
@@ -220,18 +312,23 @@
 
         <button
             type="submit"
+            class="login-button"
             id="loginButton"
             @if(session('lockout_seconds')) disabled @endif
         >
-            Login
+            Sign In
         </button>
 
     </form>
 
-    <p style="text-align:center; margin-top:20px;">
-    Don't have an account?
-    <a href="{{ route('register') }}">Register here</a>
-</p>
+    <p class="register-link">
+        Don't have an account?
+        <a href="{{ route('register') }}">Create an account</a>
+    </p>
+
+    <div class="footer">
+        &copy; {{ date('Y') }} School Management System
+    </div>
 
 </div>
 
@@ -241,7 +338,7 @@
 
         const password = document.getElementById('password');
         const eyeIcon = document.getElementById('eyeIcon');
-        const togglePassword = document.getElementById('togglePassword');
+        const toggle = document.getElementById('togglePassword');
 
         const isHidden = password.type === 'password';
 
@@ -249,19 +346,18 @@
 
             password.type = 'text';
 
-            // Eye icon without slash
             eyeIcon.innerHTML = `
                 <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/>
                 <circle cx="12" cy="12" r="3"/>
             `;
 
-            togglePassword.title = 'Hide password';
+            toggle.title = 'Hide password';
+            toggle.setAttribute('aria-label', 'Hide password');
 
         } else {
 
             password.type = 'password';
 
-            // Eye icon with slash
             eyeIcon.innerHTML = `
                 <path d="M2 2l20 20"/>
                 <path d="M10.58 10.58a2 2 0 0 0 2.83 2.83"/>
@@ -269,12 +365,13 @@
                 <path d="M6.61 6.61A12.1 12.1 0 0 0 2 12c1 3 5 7.5 10 7.5 1.4 0 2.7-.4 3.8-1"/>
             `;
 
-            togglePassword.title = 'Show password';
+            toggle.title = 'Show password';
+            toggle.setAttribute('aria-label', 'Show password');
         }
     }
 </script>
 
-{{-- Countdown Timer --}}
+{{-- Lockout Countdown Timer --}}
 @if (session('lockout_seconds'))
 
 <script>
@@ -314,3 +411,4 @@
 
 </body>
 </html>
+
