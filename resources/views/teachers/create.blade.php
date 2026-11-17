@@ -13,14 +13,14 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #e76ab7;
+            background: #f9ddee;
+            color: black;
         }
 
         .sidebar {
             width: 235px;
-            background: #e76ab7;
-            color: white;
+            background: #f0eaee;
+            color: black;
             position: fixed;
             top: 0;
             bottom: 0;
@@ -36,15 +36,15 @@
             display: block;
             padding: 13px;
             margin-bottom: 8px;
-            color: #dbeafe;
+            color: #080808;
             text-decoration: none;
             border-radius: 8px;
         }
 
         .sidebar a:hover,
         .sidebar a.active {
-            background: #853164;
-            color: white;
+            background: #eb8dc7;
+            color: black;
         }
 
         .main {
@@ -113,7 +113,7 @@
         }
 
         input:focus {
-            border-color: #2563eb;
+            border-color: #eb8dc7;
             box-shadow: 0 0 0 3px #2563eb20;
         }
 
@@ -143,17 +143,17 @@
         }
 
         .btn-primary {
-            background: #e76ab7;
+            background: #eb8dc7;
             color: white;
         }
 
         .btn-primary:hover {
-            background: #e76ab7;
+            background: #eb8dc7;
         }
 
         .btn-secondary {
             background: #f1f5f9;
-            color: #334155;
+            color: #eb8dc7;
         }
 
         .btn-secondary:hover {

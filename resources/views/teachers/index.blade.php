@@ -43,7 +43,7 @@
             margin-bottom: 20px;
             border-radius: 7px;
             background: #dcfce7;
-            color: #166534;
+            color: #eb8dc7;
         }
 
         .add-button {
@@ -104,7 +104,7 @@
             margin: 0 4px 6px 0;
             padding: 5px 9px;
             background: #eff6ff;
-            color: #1d4ed8;
+            color: #1a1819;
             border-radius: 5px;
             font-size: 13px;
         }
@@ -132,19 +132,19 @@
         }
 
         .btn-classes {
-            background: #0d9488;
+            background: #eb8dc7;
         }
 
         .btn-classes:hover {
-            background: #0f766e;
+            background: #eb4aad;
         }
 
         .btn-subjects {
-            background: #7c3aed;
+            background: #eb8dc7;
         }
 
         .btn-subjects:hover {
-            background: #6d28d9;
+            background: #eb4aad;
         }
 
         .empty-table {
