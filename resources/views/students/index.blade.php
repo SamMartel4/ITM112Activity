@@ -18,7 +18,7 @@
             padding: 25px;
             border-radius: 10px;
         }
-        h1 { color: #1e3a8a; }
+        h1 { color: #e76ab7; }
         .add {
             display: inline-block;
             padding: 10px 15px;
