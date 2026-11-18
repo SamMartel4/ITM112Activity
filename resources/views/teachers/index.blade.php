@@ -161,6 +161,10 @@
             .container {
                 padding: 16px;
             }
+
+            h1 {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
@@ -172,7 +176,7 @@
     <h1>Teachers List</h1>
 
     <p class="subtitle">
-        Teacher information and class assignments
+        Teacher Information, Section and Subjects Assignments
     </p>
 
     @if (session('success'))
@@ -191,7 +195,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Teacher</th>
-                    <th>Assigned Classes</th>
+                    <th>Assigned Sections</th>
                     <th>Assigned Subjects</th>
                     <th>Action</th>
                 </tr>
@@ -199,6 +203,7 @@
 
             <tbody>
                 @forelse ($teachers as $teacher)
+
                     <tr>
                         <td>{{ $teacher->id }}</td>
 
@@ -213,40 +218,49 @@
                             </div>
                         </td>
 
-                        {{-- Assigned Classes --}}
+                        {{-- Assigned Sections --}}
                         <td>
                             @forelse ($teacher->schoolClasses as $class)
+
                                 <span class="item">
                                     {{ $class->section_name }}
                                 </span>
+
                             @empty
+
                                 <span class="no-item">
-                                    No classes assigned
+                                    No sections assigned
                                 </span>
+
                             @endforelse
                         </td>
 
                         {{-- Assigned Subjects --}}
                         <td>
                             @forelse ($teacher->subjects as $subject)
+
                                 <span class="item">
                                     {{ $subject->name }}
                                 </span>
+
                             @empty
+
                                 <span class="no-item">
                                     No subjects assigned
                                 </span>
+
                             @endforelse
                         </td>
 
                         {{-- Action Buttons --}}
                         <td>
                             <div class="actions">
+
                                 <a
                                     href="{{ route('teachers.assign', $teacher->id) }}"
                                     class="btn btn-classes"
                                 >
-                                    Assign Classes
+                                    Assign Sections
                                 </a>
 
                                 <a
@@ -255,15 +269,19 @@
                                 >
                                     Assign Subjects
                                 </a>
+
                             </div>
                         </td>
                     </tr>
+
                 @empty
+
                     <tr>
                         <td colspan="5" class="empty-table">
                             No teachers found.
                         </td>
                     </tr>
+
                 @endforelse
             </tbody>
         </table>

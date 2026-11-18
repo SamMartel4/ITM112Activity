@@ -44,8 +44,7 @@
             font-weight: bold;
         }
 
-        input,
-        select {
+        input {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccd2da;
@@ -175,39 +174,6 @@
                 @enderror
             </div>
 
-            <!-- Select Multiple Teachers -->
-            <div class="form-group">
-                <label for="teachers">Select Teachers</label>
-
-                <select
-                    name="teachers[]"
-                    id="teachers"
-                    multiple
-                    required
-                >
-                    @foreach ($teachers as $teacher)
-                        <option
-                            value="{{ $teacher->id }}"
-                            {{ in_array(
-                                $teacher->id,
-                                old('teachers', [])
-                            ) ? 'selected' : '' }}
-                        >
-                            {{ $teacher->name }}
-                        </option>
-                    @endforeach
-                </select>
-
-                @error('teachers')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                @error('teachers.*')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-               
-            </div>
 
             <!-- Buttons -->
             <div class="buttons">

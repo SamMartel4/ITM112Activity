@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Assign Classes</title>
+    <title>Assign Section</title>
 
     <style>
         * {
@@ -38,7 +38,7 @@
             margin-bottom: 24px;
         }
 
-        .class-item {
+        .section-item {
             display: flex;
             align-items: center;
             gap: 12px;
@@ -49,11 +49,11 @@
             cursor: pointer;
         }
 
-        .class-item:hover {
+        .section-item:hover {
             background: #f8fafc;
         }
 
-        .class-item input {
+        .section-item input {
             width: 17px;
             height: 17px;
             cursor: pointer;
@@ -71,7 +71,7 @@
             padding: 11px 16px;
             border: none;
             border-radius: 7px;
-            background: #2563eb;
+            background: #ef9ed0;
             color: white;
             text-decoration: none;
             font-size: 14px;
@@ -79,7 +79,7 @@
         }
 
         .btn:hover {
-            background: #1d4ed8;
+            background: #e76ab7;
         }
 
         .btn-back {
@@ -111,7 +111,7 @@
 
 <div class="container">
 
-    <h1>Assign Classes</h1>
+    <h1>Assign Section</h1>
 
     <p class="teacher-info">
         Teacher:
@@ -137,7 +137,7 @@
 
         @forelse ($classes as $class)
 
-            <label class="class-item">
+            <label class="section-item">
 
                 <input
                     type="checkbox"
@@ -174,7 +174,7 @@
         @empty
 
             <div class="empty">
-                Walay classes nga available. Paghimo una og class.
+                No sections available. Please create a section first.
             </div>
 
         @endforelse
@@ -186,7 +186,7 @@
         <div class="buttons">
 
             <button type="submit" class="btn">
-                Save Assignments
+                Save 
             </button>
 
             <a

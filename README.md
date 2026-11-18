@@ -2,13 +2,13 @@
 
 ## About the Project
 
-The School Management System is a web-based system created using Laravel. It helps manage student records, teacher information, classes, and subjects in one place.
+The School Management System is a web-based system created using Laravel. It helps manage student records, teacher information, sections, and subjects in one place.
 
 ## Features
 
 - Student Records – Add and manage student information.
 - Teacher Management – Add and manage teacher information.
-- Class Assignment – Assign classes to teachers.
+- Section Assignment – Assign sections to teachers.
 - Subject Assignment – Assign subjects to teachers.
 - Organized Records – View and manage school information easily.
 
